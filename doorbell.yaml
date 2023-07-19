@@ -62,7 +62,7 @@ sensor:
 globals:
   - id: chime
     type: bool
-    restore_mode: 'RESTORE_DEFAULT_ON'
+    restore_value: true
     initial_value: 'true'
  
 switch:
