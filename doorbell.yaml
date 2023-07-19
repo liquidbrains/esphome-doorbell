@@ -62,7 +62,7 @@ sensor:
 globals:
   - id: chime
     type: bool
-    restore_mode: RESTORE_DEFAULT_OFF
+    restore_mode: true
     initial_value: 'true'
  
 switch:
@@ -79,7 +79,7 @@ switch:
   - platform: template
     name: Doorbell Chime Active
     id: chime_active
-    restore_mode: RESTORE_DEFAULT_OFF
+    restore_mode: false
     turn_on_action:
       - globals.set:
           id: chime
